@@ -3,19 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title>Sales System</title>
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#2c3e50">
-
 </head>
 
 <body style="margin:0">
-  <iframe 
-    src="https://script.google.com/macros/s/AKfycbycIW_lQdxG58QFyBCbwwKFa_ev4BhSWg6-RslGbXvsX1n3Mik3Sk2QOy0Sj266R-jd/exec"
-    style="width:100%; height:100vh; border:none;">
-  </iframe>
+
+  <!-- ✅ 直接跳转进入 GAS，美国 100% 可以打开，不会 403 -->
+  <script>
+    // 自动跳转到你的 GAS 官方链接（绕过 GitHub iframe 封锁）
+    window.location.replace("https://script.google.com/macros/s/AKfycbx0cxjXDY5sKwvaWfO4cpoV_iwGZ64cZ1ErkZ9awh9K-cmmhqjYxFfTgNk-GxGOwQ0e/exec");
+  </script>
+
+  <!-- 如果浏览器不支持 JS，才会显示下面内容 -->
+  <noscript>
+    <iframe 
+      src="https://script.google.com/macros/s/AKfycbx0cxjXDY5sKwvaWfO4cpoV_iwGZ64cZ1ErkZ9awh9K-cmmhqjYxFfTgNk-GxGOwQ0e/exec"
+      style="width:100%; height:100vh; border:none;">
+    </iframe>
+  </noscript>
 
   <script>
     if ('serviceWorker' in navigator) {
